@@ -4,17 +4,17 @@ import React from "react";
 const Middle = () => {
   return (
     <div className="middle-content flex-grow-1 overflow-auto ps-[300px] pe-[100px] py-4">
-      <div className="container-fluid">
+      <div className="middle-1 container-fluid">
         <div className="mb-5">
-          <h1 className="display-4 fw-bold mb-2">SOFTWARE</h1>
-          <h2 className="display-4 text-gray-600 mb-4">ENGINEER</h2>
-          <p className="text-gray-400 col-md-8">
+          <h1 className="heading-1">SOFTWARE</h1>
+          <h2 className="heading-2">ENGINEER</h2>
+          <p className="sub-heading col-md-6">
             Passionate about creating intuitive and engaging user experiences.
             Specialize in transforming ideas into beautifully crafted products.
           </p>
         </div>
 
-        <div className="row mb-5">
+        <div className="landing-brief row">
           <div className="col-md-4 text-center">
             <h3 className="display-6 fw-bold">+12</h3>
             <p className="text-gray-600 text-uppercase">
@@ -41,8 +41,8 @@ const Middle = () => {
           </div>
         </div>
 
-        <h2 className="display-4 fw-bold mb-2">RECENT</h2>
-        <h3 className="display-4 text-gray-600 mb-4">PROJECTS</h3>
+        <h2 className="section-heading-1 fw-bold mb-2">RECENT</h2>
+        <h3 className="section-heading-2 text-gray-600 mb-4">PROJECTS</h3>
 
         <div className="project-cards">
           {[
