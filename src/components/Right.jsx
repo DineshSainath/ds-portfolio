@@ -14,21 +14,23 @@ const Right = () => {
 
   return (
     <div className="right-navbar position-fixed end-0 top-50 translate-middle-y p-4">
-      <nav>
-        <ul className="list-unstyled">
-          {navItems.map((item) => (
-            <li key={item.label} className="mb-3">
-              <Link
-                to={item.path}
-                className="btn btn-dark rounded-3 p-3 d-flex justify-content-center align-items-center"
-                style={{ width: "48px", height: "48px" }}
-              >
-                <item.icon size={20} />
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      {/* Add a container with background for all buttons */}
+      <div className="nav-background rounded-4 p-3">
+        <nav>
+          <ul className="list-unstyled mb-0">
+            {navItems.map((item) => (
+              <li key={item.label} className="mb-3">
+                <Link
+                  to={item.path}
+                  className="navButton btn p-3 d-flex justify-content-center align-items-center"
+                >
+                  <item.icon className="nav-icon" size={35} />
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
     </div>
   );
 };

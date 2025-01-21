@@ -1,5 +1,6 @@
 // MiddleContent.js
 import React from "react";
+import Experience from "./Experience";
 
 const Middle = () => {
   return (
@@ -10,7 +11,7 @@ const Middle = () => {
           <h2 className="heading-2">ENGINEER</h2>
           <p className="sub-heading col-md-6">
             Passionate about creating intuitive and engaging user experiences.
-            Specialize in transforming ideas into beautifully crafted products.
+            Specialized in transforming ideas into beautifully crafted products.
           </p>
         </div>
 
@@ -45,14 +46,7 @@ const Middle = () => {
         <h3 className="section-heading-2 text-gray-600 mb-4">PROJECTS</h3>
 
         <div className="project-cards">
-          {[
-            "Wedding Wise",
-            "Profile Manager",
-            "Keeper",
-            "Sample1",
-            "Sample2",
-            "Sample3",
-          ].map((project) => (
+          {["Wedding Wise", "Profile Manager", "Keeper"].map((project) => (
             <div
               key={project}
               className="bg-dark/20 rounded-3 p-4 mb-3 d-flex justify-content-between align-items-center"
@@ -61,14 +55,10 @@ const Middle = () => {
                 <h4 className="fw-bold mb-1">{project}</h4>
                 <p className="text-gray-500 mb-0">Fullstack project</p>
               </div>
-              <div className="text-gray-500">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M7 17L17 7M17 7H7M17 7V17" />
-                </svg>
-              </div>
             </div>
           ))}
         </div>
+        <Experience />
       </div>
     </div>
   );
