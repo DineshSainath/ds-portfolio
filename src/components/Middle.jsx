@@ -16,7 +16,7 @@ const Middle = () => {
 
         <div className="landing-brief row">
           <div className="col-md-4 text-center">
-            <h3 className="display-6 fw-bold">+12</h3>
+            <h3 className="display-6 fw-bold">2+</h3>
             <p className="text-gray-600 text-uppercase">
               Years of
               <br />
@@ -24,7 +24,7 @@ const Middle = () => {
             </p>
           </div>
           <div className="col-md-4 text-center">
-            <h3 className="display-6 fw-bold">+46</h3>
+            <h3 className="display-6 fw-bold">8+</h3>
             <p className="text-gray-600 text-uppercase">
               Projects
               <br />
@@ -32,11 +32,11 @@ const Middle = () => {
             </p>
           </div>
           <div className="col-md-4 text-center">
-            <h3 className="display-6 fw-bold">+20</h3>
+            <h3 className="display-6 fw-bold">4+</h3>
             <p className="text-gray-600 text-uppercase">
-              Worldwide
+              Certifications
               <br />
-              Clients
+              Completed
             </p>
           </div>
         </div>

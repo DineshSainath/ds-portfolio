@@ -13,9 +13,9 @@ const LeftCard = () => {
             className="profile-img"
           />
         </div>
-        <h2 className="profile-name text-center mb-4">Dinesh Sainath</h2>
+        <h2 className="profile-name">Dinesh Sainath</h2>
         <div className="position-relative mb-4"></div>
-        <p className="text-center text-gray-400 small">
+        <p className="profile-text">
           A Software Engineer with a passion for building products that make
           life easier.
         </p>
