@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Home, Folder, Briefcase, Key, Edit } from "lucide-react";
-
+import "./App.css";
 const App = () => {
   const navItems = [
     { icon: Home, label: "Home", path: "/" },
@@ -12,7 +12,7 @@ const App = () => {
   ];
 
   return (
-    <div className="d-flex vh-100 bg-black text-white">
+    <div className="box">
       {/* Left Static Card */}
       <div className="left-card p-4">
         <div className="bg-dark/20 rounded-3 p-4">
@@ -46,7 +46,7 @@ const App = () => {
       </div>
 
       {/* Scrollable Middle Section */}
-      <div className="flex-grow-1 overflow-auto ps-[300px] pe-[100px] py-4">
+      <div className="middle-content flex-grow-1 overflow-auto ps-[300px] pe-[100px] py-4">
         <div className="container-fluid">
           <div className="mb-5">
             <h1 className="display-4 fw-bold mb-2">SOFTWARE</h1>
@@ -89,7 +89,14 @@ const App = () => {
           <h3 className="display-4 text-gray-600 mb-4">PROJECTS</h3>
 
           <div className="project-cards">
-            {["Wedding Wise", "Profile Manager", "Keeper"].map((project) => (
+            {[
+              "Wedding Wise",
+              "Profile Manager",
+              "Keeper",
+              "Wedding Wise",
+              "Profile Manager",
+              "Keeper",
+            ].map((project) => (
               <div
                 key={project}
                 className="bg-dark/20 rounded-3 p-4 mb-3 d-flex justify-content-between align-items-center"
@@ -110,7 +117,7 @@ const App = () => {
       </div>
 
       {/* Right Static Navigation Bar */}
-      <div className="position-fixed end-0 top-50 translate-middle-y p-4">
+      <div className="right-navbar position-fixed end-0 top-50 translate-middle-y p-4">
         <nav>
           <ul className="list-unstyled">
             {navItems.map((item) => (

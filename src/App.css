@@ -1,15 +1,30 @@
+.box {
+  display: flex; /* Equivalent to d-flex */
+  position: relative;
+  height: 100vh; /* Equivalent to vh-100 */
+  background-color: black; /* Equivalent to bg-black */
+  color: white; /* Equivalent to text-white */
+}
+
 .left-card {
-  width: 300px;
+  width: 500px;
   height: 100vh;
+  margin: 100px;
 }
 
 .right-navbar {
-  width: 100px;
+  width: 180px;
   height: 100vh;
+  align-items: center;
+  align-content: center;
 }
 
 .middle-content {
-  min-height: 100vh;
+  flex-grow: 1;
+  overflow: auto;
+  padding-left: 100px; /* Space on the left */
+  padding-right: 280px; /* Space on the right */
+  padding-top: 16px;
 }
 
 .image-container img {
@@ -21,32 +36,4 @@
 body {
   margin: 0;
   background: black;
-}
-
-.bg-dark\/20 {
-  background-color: rgba(33, 37, 41, 0.2);
-}
-
-.text-gray-400 {
-  color: #9ca3af;
-}
-
-.text-gray-500 {
-  color: #6b7280;
-}
-
-.text-gray-600 {
-  color: #4b5563;
-}
-
-.border-orange-500 {
-  border-color: #f97316;
-}
-
-.bg-orange-500 {
-  background-color: #f97316;
-}
-
-.bg-orange-600 {
-  background-color: #ea580c;
 }
