@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Lexend+Deca:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
+body {
+  margin: 0;
+  background: #151312;
+}
+
 .box {
   display: flex; /* Equivalent to d-flex */
   position: relative;
   height: 100vh; /* Equivalent to vh-100 */
-  background-color: black; /* Equivalent to bg-black */
+  background-color: #151312; /* Equivalent to bg-black */
   color: white; /* Equivalent to text-white */
   margin: 0;
   font-family: "Alexandria", sans-serif;
@@ -11,15 +16,16 @@
 
 /* LEFT */
 .left-card {
-  width: 500px;
+  width: 600px;
   height: 100vh;
+  margin-left: 6%;
   /* display: flex; */
 }
 
 .layer-1 {
   background-color: #ffffff;
   padding: 2.5rem;
-  margin-top: 20%;
+  margin-top: 30%;
   margin-left: 15%;
   color: black;
 }
@@ -51,9 +57,4 @@
   display: flex;
   padding-right: 200px;
   padding-left: 70px;
-}
-
-body {
-  margin: 0;
-  background: black;
 }
