@@ -3,8 +3,8 @@ function Experience() {
     <div className="container">
       <div className="row">
         <div className="col-md-6">
-          <h2 className="section-heading-1 fw-bold mb-2">EXPERIENCE</h2>
-          <h3 className="section-heading-2 text-gray-600 mb-4">WORK</h3>
+          <h3 className="section-heading-1 text-gray-600 mb-4">WORK</h3>
+          <h3 className="section-heading-2 fw-bold mb-2">EXPERIENCE</h3>
 
           <div className="project-cards">
             {[

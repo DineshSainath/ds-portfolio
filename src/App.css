@@ -71,30 +71,6 @@ body {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .profile-name {
-    font-size: 1.5rem; /* Smaller font size on small screens */
-  }
-  .layer-1 {
-    padding: 1rem; /* Smaller padding for smaller screens */
-  }
-  .left-card {
-    width: 50%; /* Adjust width for medium screens */
-  }
-}
-
-@media (min-width: 1024px) {
-  .left-card {
-    width: 30%; /* Narrower width for larger screens */
-  }
-}
-
-@media (max-width: 1098px) {
-  .left-card {
-    width: 100%;
-  }
-}
-
 /* MIDDLE */
 .middle-content {
   min-height: 100vh;
@@ -159,13 +135,15 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  .left-card {
     width: 100%;
     background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+  .left-card {
+    background-color: white;
+  }
+  .layer-1 {
+    width: 100%;
+    margin: 0 auto;
   }
   .middle-content {
     background-color: #151312;
@@ -174,10 +152,10 @@ body {
   }
 }
 
-@media (max-width: 665px) {
+@media (max-width: 755px) {
   .left-card {
-    width: 100%;
-    margin: 0 auto;
+    width: 100% !important;
+    margin: 0 auto !important;
     height: auto;
     display: flex;
     justify-content: center;
@@ -186,8 +164,28 @@ body {
   }
   .layer-1 {
     width: 70%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 5em !important;
+  }
+
+  h3 {
+    font-size: 4em !important;
   }
 }
+
+@media (max-width: 528px) {
+  h1 {
+    font-size: 3em !important;
+  }
+
+  h3 {
+    font-size: 2em !important;
+  }
+}
+
 /* RIGHT */
 
 .right-navbar {
@@ -200,12 +198,9 @@ body {
   align-items: center;
   align-content: center;
   margin-right: 4%;
+  display: none;
 }
-@media (max-width: 1240px) {
-  .right-navbar {
-    display: none;
-  }
-}
+
 .nav-background {
   margin-top: 2rem;
   background-color: #1c1a19;
@@ -229,4 +224,13 @@ body {
   color: white !important;
   transform: scale(1.9);
   transition: color 0.2s ease;
+}
+
+/* MEDIA QUERIES */
+
+/* Desktops and larger monitors */
+@media (min-width: 1200px) {
+  .right-navbar {
+    display: block;
+  }
 }

@@ -8,7 +8,7 @@ const Middle = () => {
       <div className="middle-1 container-fluid">
         <div className="mb-5">
           <h1 className="heading-1">SOFTWARE</h1>
-          <h2 className="heading-2">ENGINEER</h2>
+          <h1 className="heading-2">ENGINEER</h1>
           <p className="sub-heading col-md-6">
             Passionate about creating intuitive and engaging user experiences.
             Specialized in transforming ideas into beautifully crafted products.
@@ -42,7 +42,7 @@ const Middle = () => {
           </div>
         </div>
 
-        <h2 className="section-heading-1 fw-bold mb-2">RECENT</h2>
+        <h3 className="section-heading-1 fw-bold mb-2">RECENT</h3>
         <h3 className="section-heading-2 text-gray-600 mb-4">PROJECTS</h3>
 
         <div className="project-cards">
