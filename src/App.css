@@ -6,7 +6,9 @@ body {
 
 .box {
   display: flex;
-  position: relative;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* position: relative; */
   height: 100vh;
   background-color: #151312;
   color: white;
@@ -16,10 +18,19 @@ body {
 
 /* LEFT */
 .left-card {
-  width: 600px;
-  height: 100vh;
-  margin-left: 4%;
-  /* display: flex; */
+  /* width: 80%;
+  height: auto;
+  max-width: 350px;
+  margin-left: 4%; */
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+  width: 100%; /* Default to take full width */
+  max-width: 400px; /* Restrict it to a maximum size */
+  height: auto; /* Automatically adjust height to content */
+  margin: 0 auto;
+  overflow: hidden;
+  max-height: 42rem;
 }
 
 .layer-1 {
@@ -28,6 +39,7 @@ body {
   margin-top: 20%;
   margin-left: 10%;
   color: black;
+  overflow: hidden;
 }
 
 .image-container {
@@ -39,23 +51,48 @@ body {
 .image-container img {
   margin-bottom: 1.25rem;
   border-radius: 5%;
-  width: 85%;
-  height: 85%;
+  width: 100%; /* Make the image responsive */
+  max-width: 200px; /* Restrict maximum size */
+  height: auto;
   /* align-items: center; */
 }
 
 .profile-name {
-  padding-top: 2%;
+  /* padding-top: 2%; */
   padding-bottom: 4%;
-  font-size: 2.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
 }
 
 .profile-text {
   color: #707072;
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .profile-name {
+    font-size: 1.5rem; /* Smaller font size on small screens */
+  }
+  .layer-1 {
+    padding: 1rem; /* Smaller padding for smaller screens */
+  }
+  .left-card {
+    width: 50%; /* Adjust width for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .left-card {
+    width: 30%; /* Narrower width for larger screens */
+  }
+}
+
+@media (max-width: 1098px) {
+  .left-card {
+    width: 100%;
+  }
 }
 
 /* MIDDLE */
@@ -63,8 +100,8 @@ body {
   min-height: 100vh;
   width: 80%;
   display: flex;
-  padding-right: 200px;
-  padding-left: 70px;
+  padding-right: 10rem;
+  padding-left: 3rem;
 }
 
 .middle-1 {
@@ -112,19 +149,70 @@ body {
   color: #353334;
 }
 
+@media (max-width: 1239px) {
+  .box {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0 auto;
+    flex-shrink: 1;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .left-card {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .middle-content {
+    background-color: #151312;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 665px) {
+  .left-card {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20% !important;
+  }
+  .layer-1 {
+    width: 70%;
+  }
+}
 /* RIGHT */
+
 .right-navbar {
-  width: 100px;
-  height: 100vh;
+  width: 4%;
+  max-width: 80%;
+  height: 80vh;
+  max-height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   margin-right: 4%;
 }
-
+@media (max-width: 1240px) {
+  .right-navbar {
+    display: none;
+  }
+}
 .nav-background {
+  margin-top: 2rem;
   background-color: #1c1a19;
+  max-width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* background-color: transparent; */
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
 }
@@ -134,13 +222,11 @@ body {
   height: 48px;
 }
 .nav-icon {
-  color: rgb(165, 162, 162) !important; /* Dark gray color for the icon */
-  /* Smooth transition for hover effect */
-  size: 1.5rem;
+  color: rgb(165, 162, 162) !important;
 }
 
 .nav-icon:hover {
   color: white !important;
   transform: scale(1.9);
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
