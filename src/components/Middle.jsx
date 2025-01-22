@@ -1,6 +1,7 @@
 // MiddleContent.js
 import React from "react";
 import Experience from "./Experience";
+import "./../App.css";
 
 const Middle = () => {
   return (

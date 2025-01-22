@@ -147,8 +147,21 @@ body {
   }
   .middle-content {
     background-color: #151312;
+    /* background-color: blue; */
     width: 100%;
     margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .section-heading-1,
+  .section-heading-2 {
+    text-align: center;
+    width: 100%;
   }
 }
 
