@@ -2,14 +2,15 @@
 body {
   margin: 0;
   background: #151312;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 .box {
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
-  /* position: relative; */
-  height: 100vh;
+  height: calc(100vh-14em);
   background-color: #151312;
   color: white;
   margin: 0;
