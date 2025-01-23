@@ -7,20 +7,25 @@ function Experience() {
       <div className="project-cards">
         {[
           {
-            name: "Gravvity",
+            name: "Gravvity, Toronto",
             position: "Software Developer",
             date: "April 2023 - Nov 2024",
-            description: " ",
+            description:
+              "Developed and optimized a cutting-edge e-commerce interface in React.js, integrating VR capabilities and boosting performance and user engagement through strategic API implementation and collaboration.",
           },
           {
-            name: "Gravvity",
-            position: "Software Developer",
-            date: "April 2023 - Nov 2024",
-            description: " ",
+            name: "Vankay Systems, Raleigh",
+            position: "Frontend Developer Intern",
+            date: "Jan 2022 - Dec 2022",
+            description:
+              "Developed and maintained responsive web applications, optimizing performance and improving user experience using frontend technologies for 5+ clients",
           },
           {
-            name: "Keeper",
-            description: "A note-taking app inspired by Google Keep.",
+            name: "iCommunity, Toronto",
+            position: "UI/UX Intern",
+            date: "June 2020 - Dec 2020",
+            description:
+              "Led the design and optimization of user interfaces, conducted user research, and created wireframes and prototypes to enhance overall user experience for a student community platform.",
           },
         ].map((project) => (
           <div
@@ -28,8 +33,8 @@ function Experience() {
             className="bg-dark/20 rounded-3 p-4 mb-3 d-flex justify-content-between align-items-center"
           >
             <div>
-              <h4 className="fw-bold mb-1">{project.name}</h4>
-              <p className="description text-gray-500 mb-0">
+              <h4 className="job-title fw-bold mb-1">{project.name}</h4>
+              <p className="job-description text-gray-500 mb-0">
                 {project.description}
               </p>
             </div>
