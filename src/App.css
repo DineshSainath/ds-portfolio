@@ -96,10 +96,6 @@ body {
   font-size: larger;
 }
 
-.landing-brief {
-  padding-bottom: 8%;
-}
-
 .heading-1 {
   font-size: 7.5rem;
   font-weight: bold;
@@ -114,6 +110,7 @@ body {
 }
 
 .section-heading-1 {
+  margin-top: 1em;
   font-size: 5.5rem;
   font-weight: bold;
   margin-bottom: 0;
@@ -163,9 +160,17 @@ body {
 }
 
 /* EXPERIENCE */
+
 .job-description {
   color: #827f81;
   max-width: 60em;
+}
+
+/* SKILLS */
+.skill-cards {
+  display: flex;
+  max-width: 80em;
+  flex-wrap: wrap;
 }
 @media (max-width: 1239px) {
   .box {

@@ -42,7 +42,7 @@ function Footer() {
           </a>
         </ul>
         <footer className="trademark">
-          <p>Made by DS</p>
+          <p>Created by DS</p>
         </footer>
       </div>
     </section>

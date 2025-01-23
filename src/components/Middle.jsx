@@ -1,6 +1,7 @@
 // MiddleContent.js
 import React from "react";
 import Experience from "./Experience";
+import Skills from "./Skills";
 import "./../App.css";
 import { MoveUpRight } from "lucide-react";
 
@@ -90,6 +91,7 @@ const Middle = () => {
           ))}
         </div>
         <Experience />
+        <Skills />
       </div>
     </div>
   );
