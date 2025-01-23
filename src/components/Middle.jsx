@@ -2,6 +2,7 @@
 import React from "react";
 import Experience from "./Experience";
 import "./../App.css";
+import { MoveUpRight } from "lucide-react";
 
 const Middle = () => {
   return (
@@ -10,7 +11,7 @@ const Middle = () => {
         <div className="mb-5">
           <h1 className="heading-1">SOFTWARE</h1>
           <h1 className="heading-2">ENGINEER</h1>
-          <p className="sub-heading col-md-6">
+          <p className="sub-heading col-md-8">
             Passionate about creating intuitive and engaging user experiences.
             Specialized in transforming ideas into beautifully crafted products.
           </p>
@@ -47,15 +48,44 @@ const Middle = () => {
         <h3 className="section-heading-2 text-gray-600 mb-4">PROJECTS</h3>
 
         <div className="project-cards">
-          {["Wedding Wise", "Profile Manager", "Keeper"].map((project) => (
+          {[
+            {
+              name: "Wedding Wise",
+              description:
+                "A wedding planning application with vendor management.",
+              link: `https://weddingwise-ds.netlify.app/`,
+            },
+            {
+              name: "Profile Deck",
+              description: "An app for managing user profiles and settings.",
+              link: `https://codesandbox.io/p/sandbox/keeper-pjv54?file=%2Fsrc%2Findex.js`,
+            },
+            {
+              name: "Keeper",
+              description: "A note-taking app inspired by Google Keep.",
+              link: `https://coruscating-crostata-d691f8.netlify.app/`,
+            },
+          ].map((project) => (
             <div
-              key={project}
-              className="bg-dark/20 rounded-3 p-4 mb-3 d-flex justify-content-between align-items-center"
+              key={project.name}
+              className="project bg-dark/20 rounded-3 p-4 mb-3 d-flex justify-content-between align-items-center"
             >
-              <div>
-                <h4 className="fw-bold mb-1">{project}</h4>
-                <p className="text-gray-500 mb-0">Fullstack project</p>
-              </div>
+              <a
+                className="project-link"
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div>
+                  <h4 className="project-heading fw-bold mb-1">
+                    {project.name}
+                  </h4>{" "}
+                  <MoveUpRight className="link-icon" size={24} />
+                  <p className="description text-gray-500 mb-0">
+                    {project.description}
+                  </p>
+                </div>
+              </a>
             </div>
           ))}
         </div>

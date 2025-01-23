@@ -125,6 +125,42 @@ body {
   color: #353334;
 }
 
+.project {
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.project:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+.project:hover .description {
+  color: rgb(202, 199, 199);
+}
+
+.project-link {
+  text-decoration: none;
+  color: white;
+}
+
+.description {
+  color: #827f81;
+}
+
+.project-heading {
+  display: inline-block;
+}
+
+.link-icon {
+  margin-left: 20px;
+  color: #827f81;
+}
+
+.project:hover .link-icon {
+  color: white;
+}
+
 @media (max-width: 1239px) {
   .box {
     padding-right: 0;
