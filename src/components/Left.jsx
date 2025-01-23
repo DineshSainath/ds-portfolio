@@ -1,3 +1,4 @@
+import { SiGmail, SiLinkedin, SiGithub } from "react-icons/si";
 const LeftCard = ({ maxWidth = "400px" }) => {
   return (
     <div className="left-card p-4" style={{ maxWidth }}>
@@ -14,6 +15,29 @@ const LeftCard = ({ maxWidth = "400px" }) => {
           A Software Engineer with a passion for building products that make
           life easier.
         </p>
+        <div className="socials">
+          <a
+            href="mailto:sainath.dinesh@gmail.com"
+            target="_blank"
+            rel={"noopener noreferrer"}
+          >
+            <SiGmail className="sIcon" size={30} />
+          </a>
+          <a
+            href="https://linkedin.com/in/dineshsainath/"
+            target="_blank"
+            rel={"noopener noreferrer"}
+          >
+            <SiLinkedin className="sIcon" size={30} />
+          </a>
+          <a
+            href="https://github.com/dineshsainath/"
+            target="_blank"
+            rel={"noopener noreferrer"}
+          >
+            <SiGithub className="sIcon" size={30} />
+          </a>
+        </div>
       </div>
     </div>
   );
