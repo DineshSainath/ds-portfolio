@@ -23,6 +23,7 @@ const Right = () => {
                 <Link
                   to={item.path}
                   className="navButton btn p-3 d-flex justify-content-center align-items-center"
+                  activeClassName="active-nav"
                 >
                   <item.icon className="nav-icon" size={35} />
                 </Link>

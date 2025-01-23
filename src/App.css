@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  /* transition: width 2s; */
 }
 
 .box {
@@ -300,6 +301,12 @@ body {
 .nav-icon:hover {
   color: white !important;
   transform: scale(1.9);
+  transition: color 0.2s ease;
+}
+
+.active-nav {
+  color: white !important;
+  transform: scale(1.9) !important;
   transition: color 0.2s ease;
 }
 
