@@ -1,7 +1,9 @@
 function Experience() {
   return (
     <>
-      <h3 className="section-heading-1 fw-bold mb-2">WORK</h3>
+      <h3 data-section="experience" className="section-heading-1 fw-bold mb-2">
+        WORK
+      </h3>
       <h3 className="section-heading-2 text-gray-600 mb-4">EXPERIENCE</h3>
 
       <div className="project-cards">

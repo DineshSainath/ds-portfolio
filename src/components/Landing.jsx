@@ -1,7 +1,7 @@
 function Landing() {
   return (
     <div>
-      <div className="mb-5">
+      <div data-section="landing" className="mb-5">
         <h1 className="heading-1">SOFTWARE</h1>
         <h1 className="heading-2">ENGINEER</h1>
         <p className="sub-heading col-md-8">

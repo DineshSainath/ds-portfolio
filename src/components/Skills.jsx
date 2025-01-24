@@ -56,7 +56,9 @@ function Experience() {
 
   return (
     <>
-      <h3 className="section-heading-1 fw-bold mb-2">SKILLS &</h3>
+      <h3 data-section="skills" className="section-heading-1 fw-bold mb-2">
+        SKILLS &
+      </h3>
       <h3 className="section-heading-2 text-gray-600 mb-4">TOOLS</h3>
 
       <div className="skill-cards">
