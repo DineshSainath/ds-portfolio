@@ -370,15 +370,19 @@ body {
   align-content: center;
   margin-right: 4%;
   display: none;
+  /*Animation*/
+  animation: fadeIn 3s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
 }
 
 .nav-background {
-  margin-top: 2rem;
   background-color: #1c1a19;
   max-width: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20em;
   /* background-color: transparent; */
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
 }
