@@ -374,7 +374,7 @@ body {
 }
 
 .nav-background {
-  margin-top: 2rem;
+  margin-bottom: 17em;
   background-color: #1c1a19;
   max-width: 4rem;
   display: flex;
@@ -393,9 +393,9 @@ body {
 }
 
 .nav-icon:hover {
-  color: white !important;
+  color: white;
   transform: scale(1.9);
-  transition: color 0.2s ease;
+  transition: color 0.1s ease;
 }
 
 .active-nav {
@@ -435,6 +435,10 @@ body {
   --img-grayscale: 80%;
   --proj-desc: #827f81;
   --proj-desc-hover: white;
+  --job-heading: white;
+  --job-desc: #827f81;
+  --skill-icon: white;
+  --navBar-icon: #5b5a5a;
 
   --bg-primary: black;
   --text-primary: #151312;
@@ -455,6 +459,9 @@ body.dark-mode {
   --sectionHeading2: #5b5a5a;
   --proj-desc: #5b5a5a;
   --proj-desc-hover: #151312;
+  --job-heading: #151312;
+  --skill-icon: #151312;
+  --navBar-icon: #ada7a7;
 
   --bg-primary: #151312;
   --text-primary: white;
@@ -519,22 +526,13 @@ body.dark-mode {
 /* Component-specific styles using variables */
 
 .nav-background {
-  background-color: var(--nav-bg);
+  background-color: var(--card-bg);
   transition: background-color 0.3s ease;
 }
 
 .nav-icon {
-  color: var(--nav-icon);
+  color: var(--navBar-icon) !important;
   transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.nav-icon:hover {
-  color: var(--nav-icon-hover);
-  transform: scale(1.2);
-}
-
-.active-nav .nav-icon {
-  color: var(--nav-icon-hover);
 }
 
 /* Component-specific dark mode behavior */
@@ -564,18 +562,24 @@ body.dark-mode {
   color: var(--proj-desc-hover);
 }
 
+/* EXPERIENCE */
+
 /* .description {
   color: var(--proj-desc) !important;
 } */
-
-.job-description {
-  color: var(--text-primary);
+.job-title {
+  color: var(--job-heading);
   transition: color 0.3s ease;
 }
 
-.skill-cards {
-  background-color: var(--bg-secondary);
-  transition: background-color 0.3s ease;
+.job-description {
+  color: var(--job-desc);
+  transition: color 0.3s ease;
+}
+
+.skill-icon {
+  color: var(--skill-icon);
+  transition: color 0.3s ease;
 }
 
 /* Media Queries */

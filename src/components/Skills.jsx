@@ -67,7 +67,7 @@ function Experience() {
             key={index}
             className="bg-dark/20 rounded-3 p-4 mb-3 d-flex justify-content-between align-items-center"
           >
-            <div className="d-flex align-items-center">
+            <div className="skill-icon d-flex align-items-center">
               {skill.icon}
               <div className="ms-3">
                 <h4 className="job-title fw-bold mb-1">{skill.name}</h4>
