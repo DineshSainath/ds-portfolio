@@ -1,14 +1,13 @@
+/* eslint-disable no-unused-vars */
 import { SiGmail, SiLinkedin, SiGithub } from "react-icons/si";
 const LeftCard = ({ maxWidth = "400px" }) => {
+  const imgSrc = `https://i.pinimg.com/564x/d4/50/dc/d450dc5b1dcd30086b0a4199195cdb89.jpg`;
+  const ds = `${process.env.PUBLIC_URL}/DS_Image.jpeg`;
   return (
     <div className="left-card p-4" style={{ maxWidth }}>
       <div className="layer-1 rounded-4">
         <div className="image-container">
-          <img
-            src="https://i.pinimg.com/564x/d4/50/dc/d450dc5b1dcd30086b0a4199195cdb89.jpg"
-            alt="Profile"
-            className="profile-img"
-          />
+          <img src={ds} alt="Profile" className="profile-img" />
         </div>
         <h2 className="profile-name">Dinesh Sainath</h2>
         <p className="profile-text">

@@ -57,6 +57,12 @@ body {
   max-width: 200px; /* Restrict maximum size */
   height: auto;
   /* align-items: center; */
+  filter: grayscale(80%);
+  transition: filter 0.3s ease !important;
+}
+
+.image-container img:hover {
+  filter: grayscale(0%) !important;
 }
 
 .profile-name {
@@ -112,6 +118,7 @@ body {
   margin-top: 3%;
   margin-left: 1%;
   font-size: larger;
+  min-width: 20em;
 }
 
 .heading-1 {
@@ -192,7 +199,27 @@ body {
 }
 @media (min-width: 1240px) and (max-width: 1390px) {
   .left-card {
-    max-height: 35em;
+    max-height: 30em;
+  }
+  .layer-1 {
+    max-width: 15em;
+  }
+  .image-container img {
+    margin-bottom: 1rem;
+    border-radius: 5%;
+    width: 70%; /* Make the image responsive */
+    height: auto;
+    max-width: 100px;
+  }
+  .profile-name {
+    font-size: 1rem;
+  }
+  .profile-text {
+    font-size: 0.8rem;
+  }
+  .socials {
+    margin-top: 2rem;
+    size: small;
   }
 }
 @media (max-width: 1239px) {
