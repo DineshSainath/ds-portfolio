@@ -6,6 +6,7 @@ body {
   padding: 0;
   height: 100%;
   /* transition: width 2s; */
+  transition: all 0.3s ease;
 }
 
 .box {
@@ -412,5 +413,192 @@ body {
 @media (min-width: 1200px) {
   .right-navbar {
     display: block;
+  }
+}
+
+/*DARK MODE*/
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+:root {
+  --heading-1: white;
+  --heading-2: #353334;
+  --subheading: #998f8f;
+  --landing-brief: white;
+  --img-grayscale: 80%;
+  --proj-desc: #827f81;
+  --proj-desc-hover: white;
+
+  --bg-primary: black;
+  --text-primary: #151312;
+  --bg-secondary: #f4f4f4;
+  --card-bg: white;
+  --card-text: black;
+  --nav-bg: white;
+  --nav-icon: gray;
+  --proj-icon-hover: white;
+}
+body.dark-mode {
+  --heading-1: #151312;
+  --heading-2: #5b5a5a;
+  --subheading: #767475;
+  --landing-brief: #151312;
+  --img-grayscale: 0%;
+  --sectionheading1: #151312;
+  --sectionHeading2: #5b5a5a;
+  --proj-desc: #5b5a5a;
+  --proj-desc-hover: #151312;
+
+  --bg-primary: #151312;
+  --text-primary: white;
+  --bg-secondary: #2a2a2a;
+  --card-bg: #2a2a2a;
+  --card-text: white;
+  --nav-bg: #1c1a19;
+  --nav-icon: #cfcfcf;
+  --proj-icon-hover: black;
+}
+
+.box {
+  background-color: var(--text-primary);
+  color: var(--card-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.layer-1 {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.sIcon.dark-mode:hover {
+  color: var(--card-socials-hover);
+}
+
+.image-container img {
+  filter: grayscale(var(--img-grayscale));
+  transition: filter 0.3s ease;
+}
+
+.heading-1 {
+  color: var(--heading-1);
+  transition: color 0.3s ease;
+}
+
+.heading-2 {
+  color: var(--heading-2);
+  transition: color 0.3s ease;
+}
+
+.subheading {
+  color: var(--subheading);
+  transition: color 0.3s ease;
+}
+
+.landing-brief {
+  color: var(--landing-brief);
+  transition: color 0.3s ease;
+}
+
+.section-heading-1 {
+  color: var(--heading-1);
+  transition: color 0.3s ease;
+}
+
+.section-heading-2 {
+  color: var(--heading-2);
+  transition: color 0.3s ease;
+}
+
+/* Component-specific styles using variables */
+
+.nav-background {
+  background-color: var(--nav-bg);
+  transition: background-color 0.3s ease;
+}
+
+.nav-icon {
+  color: var(--nav-icon);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-icon:hover {
+  color: var(--nav-icon-hover);
+  transform: scale(1.2);
+}
+
+.active-nav .nav-icon {
+  color: var(--nav-icon-hover);
+}
+
+/* Component-specific dark mode behavior */
+.project {
+  color: var(--text-primary);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.2);
+  color: var(--text-primary);
+}
+
+.project-heading {
+  color: var(--heading-1);
+}
+
+.project .link-icon .description {
+  color: var(--nav-icon);
+}
+
+.project:hover .link-icon {
+  color: var(--proj-icon-hover);
+}
+
+.project:hover .description {
+  color: var(--proj-desc-hover);
+}
+
+/* .description {
+  color: var(--proj-desc) !important;
+} */
+
+.job-description {
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.skill-cards {
+  background-color: var(--bg-secondary);
+  transition: background-color 0.3s ease;
+}
+
+/* Media Queries */
+@media (max-width: 1239px) {
+  .left-card {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+  }
+}
+
+@media (max-width: 755px) {
+  .layer-1 {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+  }
+}
+
+@media (max-width: 528px) {
+  h1 {
+    color: var(--text-primary);
+  }
+
+  h3 {
+    color: var(--text-primary);
   }
 }
