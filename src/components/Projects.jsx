@@ -3,9 +3,10 @@ import { MoveUpRight } from "lucide-react";
 function Projects() {
   return (
     <div data-section="projects">
-      <h3 className="section-heading-1 fw-bold mb-2">RECENT</h3>
-      <h3 className="section-heading-2 text-gray-600 mb-4">PROJECTS</h3>
-
+      <div className="subHeadings">
+        <h3 className="section-heading-1 fw-bold mb-2">RECENT</h3>
+        <h3 className="section-heading-2 text-gray-600 mb-4">PROJECTS</h3>
+      </div>
       <div className="project-cards">
         {[
           {

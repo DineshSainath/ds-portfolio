@@ -107,7 +107,7 @@ body {
 }
 
 .middle-1 {
-  width: 50%;
+  width: 100%;
   padding: 2.5rem;
   margin-top: 3%;
   margin-left: 2%;
@@ -119,7 +119,7 @@ body {
   margin-top: 3%;
   margin-left: 1%;
   font-size: larger;
-  min-width: 20em;
+  /* min-width: 18em; */
 }
 
 .heading-1 {
@@ -262,6 +262,19 @@ body {
     width: 100%;
   }
 }
+/* IPAD AND TABS */
+@media (min-width: 756px) and (max-width: 1238px) {
+  .sub-heading {
+    min-width: 25em;
+    margin-bottom: 4em;
+  }
+  .description {
+    min-width: 20em;
+  }
+  .middle-content {
+    width: 100%;
+  }
+}
 
 @media (max-width: 755px) {
   .left-card {
@@ -280,6 +293,7 @@ body {
 
   h1 {
     font-size: 5em !important;
+    text-align: center;
   }
 
   h3 {
@@ -290,10 +304,14 @@ body {
 @media (max-width: 528px) {
   h1 {
     font-size: 3em !important;
+    text-align: center;
   }
 
   h3 {
     font-size: 2em !important;
+  }
+  .sub-heading {
+    min-width: 15em;
   }
 }
 
