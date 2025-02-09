@@ -4,7 +4,7 @@ function Landing() {
       <div data-section="landing" className="mb-5">
         <h1 className="heading-1">SOFTWARE</h1>
         <h1 className="heading-2">ENGINEER</h1>
-        <p className="sub-heading col-md-8">
+        <p className="sub-heading">
           Passionate about creating intuitive and engaging user experiences.
           Specialized in transforming ideas into beautifully crafted products.
         </p>

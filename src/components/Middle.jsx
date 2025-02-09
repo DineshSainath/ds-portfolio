@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Projects from "./Projects";
 import Experience from "./Experience";
 import Skills from "./Skills";
-import "./../App.css";
+import "./Middle.css";
 import Landing from "./Landing";
 
 const Middle = () => {
