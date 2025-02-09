@@ -7,6 +7,7 @@
   padding: 3rem;
   display: flex;
   flex-direction: column;
+  margin-left: 3rem;
 }
 
 .heading-1,
@@ -42,7 +43,7 @@
 
 /* RECENT PROJECTS */
 .section-heading-1 {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   font-size: 5.5rem;
   font-weight: bold;
   /*Animation*/
@@ -115,7 +116,6 @@
 }
 
 /* SKILLS */
-
 .skill-cards {
   display: flex;
   max-width: 80em;

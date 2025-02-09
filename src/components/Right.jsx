@@ -1,5 +1,6 @@
 import React from "react";
 import { Home, Folder, Briefcase, Key } from "lucide-react";
+import "./Right.css";
 
 const Right = () => {
   const navItems = [
@@ -10,8 +11,8 @@ const Right = () => {
   ];
 
   return (
-    <div className="right-navbar position-fixed end-0 top-50 translate-middle-y p-4">
-      <div className="nav-background rounded-4 p-3">
+    <div className="right-navbar">
+      <div className="nav-background">
         <nav>
           <ul className="list-unstyled mb-0">
             {navItems.map((item) => (
@@ -31,9 +32,9 @@ const Right = () => {
                       });
                     }
                   }}
-                  className="navButton btn p-3 d-flex justify-content-center align-items-center"
+                  className="navButton btn"
                 >
-                  <item.icon className="nav-icon" size={35} />
+                  <item.icon className="nav-icon" size={32} />
                 </button>
               </li>
             ))}

@@ -1,0 +1,22 @@
+.right-navbar {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 3rem;
+  /* background-color: #f8f9fa; */
+  border-radius: 0.8rem;
+}
+
+.nav-background {
+  border-radius: 0.5rem; /* rounded-4 (Bootstrap: 0.5rem or 8px) */
+  padding: 1rem;
+}
+
+.navButton {
+  padding: 1rem; /* p-3 (Bootstrap spacing: 1rem or 16px) */
+  display: flex; /* d-flex */
+  justify-content: center; /* justify-content-center */
+  align-items: center; /* align-items-center */
+  color: gray;
+}
