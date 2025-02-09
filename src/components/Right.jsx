@@ -34,7 +34,7 @@ const Right = () => {
                   }}
                   className="navButton btn"
                 >
-                  <item.icon className="nav-icon" size={32} />
+                  <item.icon className="nav-icon" size={35} />
                 </button>
               </li>
             ))}
