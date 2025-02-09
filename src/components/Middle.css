@@ -39,3 +39,85 @@
 .landing-brief {
   margin: 5rem 0 5rem 0 !important;
 }
+
+/* RECENT PROJECTS */
+.section-heading-1 {
+  margin-top: 1rem;
+  font-size: 5.5rem;
+  font-weight: bold;
+  /*Animation*/
+  animation: fadeIn 5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.section-heading-2 {
+  font-size: 5.5rem;
+  font-weight: bold;
+  color: #353334;
+  /*Animation*/
+  animation: fadeIn 3s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  max-width: 50rem;
+  margin: 0;
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.project:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+.project:hover .description {
+  color: rgb(202, 199, 199);
+}
+
+.project-link {
+  text-decoration: none;
+  color: white;
+}
+
+.description {
+  color: #827f81;
+}
+
+.project-heading {
+  display: inline-block;
+}
+
+.link-icon {
+  margin-left: 20px;
+  color: #827f81;
+}
+
+.project:hover .link-icon {
+  color: white;
+}
+
+/* WORK EXPERIENCE */
+
+.job-title {
+  font-size: 1.7rem;
+}
+
+.job-description {
+  color: #827f81;
+  max-width: 60em;
+  font-size: 1.2rem;
+}
+
+/* SKILLS */
+
+.skill-cards {
+  display: flex;
+  max-width: 80em;
+  flex-wrap: wrap;
+}
