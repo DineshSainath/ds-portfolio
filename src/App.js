@@ -31,9 +31,9 @@ const App = () => {
         {isDarkMode ? <Moon size={24} /> : <Sun size={24} />}
       </button>
       <div className="box">
-        <Left />
-        <Middle />
-        <Right />
+        <Left className="cols one" />
+        <Middle className="cols two" />
+        <Right className="cols three" />
       </div>
       <Footer />
     </>

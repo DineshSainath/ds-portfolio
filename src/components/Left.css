@@ -1,0 +1,60 @@
+.left-card {
+  display: flex;
+  margin: 2rem;
+}
+
+.layer-1 {
+  background-color: white;
+  color: white;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 39rem;
+  max-width: 25rem;
+  margin-top: 5rem;
+}
+
+.profile-img {
+  max-height: 20rem;
+  max-width: 15rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  filter: grayscale(80%);
+  transition: filter 0.3s ease !important;
+}
+
+.profile-img:hover {
+  filter: grayscale(0%);
+}
+
+.profile-name {
+  color: black;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin: 1.2rem;
+}
+
+.profile-text {
+  color: #707072;
+  margin: 0rem 1rem 1.5rem 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  gap: 2.5rem;
+  margin: 1rem;
+}
+
+.sIcon {
+  color: #707072;
+  transition: all 0.3s ease; /*see if you can delete*/
+}
+
+.sIcon:hover {
+  color: #151312;
+}
