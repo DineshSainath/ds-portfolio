@@ -7,11 +7,12 @@ body {
 
 .box {
   display: flex;
-  /* justify-content: center; */
-  /* align-i
-  tems: center; */
-  /* height: calc(100vh-14em); */
   background-color: #151312;
   color: white;
-  /* justify-content: space-between; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.two {
+  flex: 1;
 }

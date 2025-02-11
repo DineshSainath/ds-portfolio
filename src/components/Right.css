@@ -1,7 +1,15 @@
+:root {
+  --transition: 0.3s ease-in-out;
+}
+
+.right {
+  display: flex;
+}
+
 .right-navbar {
   position: fixed;
   right: 0;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   margin-right: 3rem;
   border-radius: 0.8rem;
@@ -18,5 +26,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: gray;
+  color: gray !important;
+  /* transition: var(--transition); */
+}
+
+.navButton:hover {
+  color: white !important;
+  transform: scale(1.02) !important;
+}
+
+/* Extra Small Devices (Portrait Phones) */
+@media (max-width: 576px) {
+}
+
+/* Small Devices (Landscape Phones) */
+@media (min-width: 577px) and (max-width: 768px) {
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 769px) and (max-width: 992px) {
+}
+
+/* Large Devices (Laptops/Desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+}
+
+/* Extra Large Devices (Large Screens) */
+@media (min-width: 1201px) {
 }
