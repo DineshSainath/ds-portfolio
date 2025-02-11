@@ -55,8 +55,11 @@
 /* Large Devices (Laptops/Desktops) */
 @media (min-width: 993px) and (max-width: 1280px) {
   .nav-icon {
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
+  }
+  .right-navbar {
+    margin-right: 2rem;
   }
 }
 

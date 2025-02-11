@@ -12,24 +12,24 @@ function Landing() {
 
       <div className="landing-brief row">
         <div className="col-md-4 text-center">
-          <h3 className="display-6 fw-bold">2+</h3>
-          <p className="text-gray-600 text-uppercase">
+          <h3 className="display-6 fw-bold no">2+</h3>
+          <p className="text-gray-600 text-uppercase landing-text">
             Years of
             <br />
             Experience
           </p>
         </div>
         <div className="col-md-4 text-center">
-          <h3 className="display-6 fw-bold">8+</h3>
-          <p className="text-gray-600 text-uppercase">
+          <h3 className="display-6 fw-bold no">8+</h3>
+          <p className="text-gray-600 text-uppercase landing-text">
             Projects
             <br />
             Completed
           </p>
         </div>
         <div className="col-md-4 text-center">
-          <h3 className="display-6 fw-bold">4+</h3>
-          <p className="text-gray-600 text-uppercase">
+          <h3 className="display-6 fw-bold no">4+</h3>
+          <p className="text-gray-600 text-uppercase landing-text">
             Certifications
             <br />
             Completed

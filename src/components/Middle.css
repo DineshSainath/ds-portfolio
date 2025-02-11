@@ -121,3 +121,51 @@
   max-width: 80em;
   flex-wrap: wrap;
 }
+
+/* Extra Small Devices (Portrait Phones) */
+@media (max-width: 576px) {
+}
+
+/* Small Devices (Landscape Phones) */
+@media (min-width: 577px) and (max-width: 768px) {
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 769px) and (max-width: 992px) {
+}
+
+/* Large Devices (Laptops/Desktops) */
+@media (min-width: 993px) and (max-width: 1300px) {
+  .middle-1 {
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+
+  .heading-1,
+  .heading-2 {
+    font-size: 4.5rem;
+  }
+
+  .sub-heading {
+    font-size: 1rem;
+    max-width: 40rem;
+  }
+
+  .landing-brief {
+    margin-bottom: 2rem;
+    padding-right: 7rem;
+    /* max-width: 40rem; */
+  }
+
+  .no {
+    font-size: 2rem !important;
+  }
+
+  .landing-text {
+    font-size: 0.7rem !important;
+  }
+}
+
+/* Extra Large Devices (Large Screens) */
+@media (min-width: 1201px) {
+}

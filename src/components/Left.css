@@ -52,9 +52,70 @@
 
 .sIcon {
   color: #707072;
-  transition: all 0.3s ease; /*see if you can delete*/
+  transition: all 0.3s ease;
 }
 
 .sIcon:hover {
   color: #151312;
+}
+
+/* Extra Small Devices (Portrait Phones) */
+@media (max-width: 576px) {
+  .right-navbar {
+    display: none;
+  }
+}
+
+/* Small Devices (Landscape Phones) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .right-navbar {
+    display: none;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .right-navbar {
+    display: none;
+  }
+}
+
+/* Large Devices (Laptops/Desktops) */
+@media (min-width: 993px) and (max-width: 1300px) {
+  .nav-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .layer-1 {
+    max-height: 26rem;
+    max-width: 14rem;
+    margin-top: 2.5rem;
+  }
+
+  .profile-img {
+    max-height: 13rem;
+    max-width: 10rem;
+    margin-top: 1.5rem;
+  }
+
+  .profile-name {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0.8rem;
+  }
+
+  .profile-text {
+    margin: 0rem 0.5rem 0.2rem 0.5rem;
+    font-size: 0.7rem;
+  }
+  .sIcon {
+    color: #707072;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Extra Large Devices (Large Screens) */
+@media (min-width: 1201px) {
 }
