@@ -65,13 +65,13 @@ function Experience() {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="bg-dark/20 rounded-3 p-4 mb-3 d-flex justify-content-between align-items-center"
+            className="skill bg-dark/20 rounded-3 p-4 mb-3 d-flex justify-content-between align-items-center"
           >
             <div className="skill-icon d-flex align-items-center">
               {skill.icon}
               <div className="ms-3">
-                <h4 className="job-title fw-bold mb-1">{skill.name}</h4>
-                <p className="job-description text-gray-500 mb-0">
+                <h4 className="skill-title fw-bold mb-1">{skill.name}</h4>
+                <p className="skill-description text-gray-500 mb-0">
                   {skill.description}
                 </p>
               </div>

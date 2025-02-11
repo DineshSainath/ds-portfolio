@@ -32,7 +32,7 @@ function Experience() {
         ].map((project) => (
           <div
             key={project.name}
-            className="bg-dark/20 rounded-3 p-4 mb-3 d-flex justify-content-between align-items-center"
+            className="job bg-dark/20 rounded-3 p-4 mb-3 d-flex justify-content-between align-items-center"
           >
             <div>
               <h4 className="job-title fw-bold mb-1">{project.name}</h4>

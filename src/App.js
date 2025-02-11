@@ -24,12 +24,12 @@ const App = () => {
 
   return (
     <>
-      <button
+      {/* <button
         onClick={() => setIsDarkMode(!isDarkMode)}
         className="theme-toggle"
       >
         {isDarkMode ? <Moon size={24} /> : <Sun size={24} />}
-      </button>
+      </button> */}
       <div className="box">
         <div className="cols one">
           <Left />
