@@ -1,3 +1,4 @@
+/* Middle.css */
 .middle-content {
   display: flex;
   max-width: 76em;
@@ -132,6 +133,22 @@
 
 /* Medium Devices (Tablets) */
 @media (min-width: 769px) and (max-width: 992px) {
+  .middle-1 {
+    margin: 0 auto;
+  }
+  .heading-1,
+  .heading-2 {
+    text-align: center;
+  }
+  .sub-heading {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .section-heading-1,
+  .section-heading-2 {
+    text-align: center;
+  }
 }
 
 /* Large Devices (Laptops/Desktops) */

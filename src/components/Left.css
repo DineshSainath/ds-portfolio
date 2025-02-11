@@ -1,3 +1,4 @@
+/* Left.css */
 .left-card {
   display: flex;
   margin: 2rem;
@@ -61,32 +62,38 @@
 
 /* Extra Small Devices (Portrait Phones) */
 @media (max-width: 576px) {
-  .right-navbar {
-    display: none;
-  }
 }
 
 /* Small Devices (Landscape Phones) */
 @media (min-width: 577px) and (max-width: 768px) {
-  .right-navbar {
-    display: none;
+  .left-card {
+    width: 100%;
+  }
+
+  .layer-1 {
+    width: 100%;
   }
 }
 
 /* Medium Devices (Tablets) */
 @media (min-width: 769px) and (max-width: 992px) {
-  .right-navbar {
-    display: none;
+  .left-card {
+    margin: 0 auto;
+  }
+  .layer-1 {
+    margin: 0 auto;
+    border-radius: 0em;
+  }
+  .profile-name {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0.8rem;
+    margin-top: 1.5rem;
   }
 }
 
 /* Large Devices (Laptops/Desktops) */
 @media (min-width: 993px) and (max-width: 1300px) {
-  .nav-icon {
-    width: 25px;
-    height: 25px;
-  }
-
   .layer-1 {
     max-height: 26rem;
     max-width: 14rem;

@@ -3,6 +3,7 @@ body {
   background: #151312;
   font-family: "Alexandria", sans-serif !important;
   transition: all 0.3s ease;
+  display: flex;
 }
 
 .box {
@@ -15,4 +16,45 @@ body {
 
 .two {
   flex: 1;
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  body {
+    width: 100%;
+  }
+  .box {
+    justify-content: center;
+  }
+  .one {
+    flex: 1;
+    background-color: white;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  body {
+    width: 100%;
+  }
+  .one {
+    flex: 1;
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .two,
+  .three {
+    flex: 1;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    width: 100% !important;
+  }
 }
