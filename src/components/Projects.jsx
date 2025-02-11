@@ -10,6 +10,12 @@ function Projects() {
       <div className="project-cards">
         {[
           {
+            name: "Palette AI",
+            description:
+              "An AI-generated color palette application from user's prompt",
+            link: `https://ai-color-palette.onrender.com/`,
+          },
+          {
             name: "Wedding Wise",
             description:
               "A wedding planning application with vendor management.",
