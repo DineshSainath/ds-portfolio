@@ -62,21 +62,30 @@
 
 /* Extra Small Devices (Portrait Phones) */
 @media (max-width: 576px) {
+  .left-card {
+    margin: 0 auto;
+  }
+  .layer-1 {
+    margin: 0 auto;
+    border-radius: 0em;
+  }
 }
 
 /* Small Devices (Landscape Phones) */
 @media (min-width: 577px) and (max-width: 768px) {
   .left-card {
     width: 100%;
+    margin: 0 auto;
   }
 
   .layer-1 {
     width: 100%;
+    margin: 0 auto;
   }
 }
 
 /* Medium Devices (Tablets) */
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 1000px) {
   .left-card {
     margin: 0 auto;
   }
@@ -93,7 +102,7 @@
 }
 
 /* Large Devices (Laptops/Desktops) */
-@media (min-width: 993px) and (max-width: 1300px) {
+@media (min-width: 1001px) and (max-width: 1300px) {
   .layer-1 {
     max-height: 26rem;
     max-width: 14rem;

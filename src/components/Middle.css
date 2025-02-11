@@ -125,14 +125,49 @@
 
 /* Extra Small Devices (Portrait Phones) */
 @media (max-width: 576px) {
+  .middle-1 {
+    margin: 0 auto;
+  }
+  .heading-1,
+  .heading-2 {
+    text-align: center;
+    font-size: 2.5em;
+  }
+  .sub-heading {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .section-heading-1,
+  .section-heading-2 {
+    text-align: center;
+    font-size: 2.2em;
+  }
 }
 
 /* Small Devices (Landscape Phones) */
 @media (min-width: 577px) and (max-width: 768px) {
+  .middle-1 {
+    margin: 0 auto;
+  }
+
+  .heading-1,
+  .heading-2 {
+    text-align: center;
+    font-size: 3.5em;
+  }
+  .sub-heading {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .section-heading-1,
+  .section-heading-2 {
+    text-align: center;
+    font-size: 3em;
+  }
 }
 
 /* Medium Devices (Tablets) */
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 1000px) {
   .middle-1 {
     margin: 0 auto;
   }
@@ -152,7 +187,7 @@
 }
 
 /* Large Devices (Laptops/Desktops) */
-@media (min-width: 993px) and (max-width: 1300px) {
+@media (min-width: 1001px) and (max-width: 1300px) {
   .middle-1 {
     padding-left: 0;
     padding-top: 1rem;
