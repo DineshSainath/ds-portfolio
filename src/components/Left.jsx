@@ -38,6 +38,13 @@ const LeftCard = () => {
           >
             <SiGithub className="sIcon" size={30} />
           </a>{" "}
+          <a
+            href={`${process.env.PUBLIC_URL}/resume/FullstackResume.pdf`}
+            target="_blank"
+            rel={"noopener noreferrer"}
+          >
+            <IoDocumentText className="sIcon" size={30} />
+          </a>
         </div>
       </div>
     </div>
