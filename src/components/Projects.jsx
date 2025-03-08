@@ -24,7 +24,7 @@ function Projects() {
           {
             name: "Profile Deck",
             description: "An app for managing user profiles and settings.",
-            link: `https://codesandbox.io/p/sandbox/keeper-pjv54?file=%2Fsrc%2Findex.js`,
+            link: `https://super-macaron-b74cb9.netlify.app/login`,
           },
           {
             name: "Keeper",
