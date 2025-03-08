@@ -58,3 +58,12 @@ body {
 .theme-toggle {
   display: none;
 }
+
+.projectIcon {
+  color: #707072;
+  transition: all 0.3s ease;
+}
+
+.projectIcon:hover {
+  color: white;
+}
