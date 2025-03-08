@@ -2,9 +2,13 @@
 import { SiGmail, SiLinkedin, SiGithub } from "react-icons/si";
 import { IoDocumentText } from "react-icons/io5";
 import "./Left.css";
+// Import the resume file directly
+import resumePdf from "../assets/FullstackResume.pdf";
+
 const LeftCard = () => {
   const imgSrc = `https://i.pinimg.com/564x/d4/50/dc/d450dc5b1dcd30086b0a4199195cdb89.jpg`;
   const ds = `${process.env.PUBLIC_URL}/DS_Image.jpeg`;
+
   return (
     <div className="left-card">
       <div className="layer-1">
@@ -38,11 +42,7 @@ const LeftCard = () => {
           >
             <SiGithub className="sIcon" size={30} />
           </a>{" "}
-          <a
-            href={`${process.env.PUBLIC_URL}/resume/FullstackResume.pdf`}
-            target="_blank"
-            rel={"noopener noreferrer"}
-          >
+          <a href={resumePdf} target="_blank" rel={"noopener noreferrer"}>
             <IoDocumentText className="sIcon" size={30} />
           </a>
         </div>
