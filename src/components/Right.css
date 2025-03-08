@@ -17,6 +17,7 @@
   padding: 1rem;
   animation: fadeIn 2s ease-out forwards;
   animation-delay: 0.2s;
+  background-color: transparent;
 }
 
 .navButton {
@@ -63,9 +64,36 @@
   }
   .right-navbar {
     margin-right: 2rem;
+    position: fixed;
+    right: 0;
+  }
+  .nav-background {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .navButton {
+    background-color: transparent;
   }
 }
 
 /* Extra Large Devices (Large Screens) */
 @media (min-width: 1201px) {
+  .nav-icon {
+    width: 26px;
+    height: 26px;
+  }
+  .right-navbar {
+    margin-right: 4rem;
+    position: fixed;
+    right: 0;
+  }
+  .nav-background {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .navButton {
+    padding: 1.2rem;
+    margin-top: 1.2rem;
+    background-color: transparent;
+  }
 }

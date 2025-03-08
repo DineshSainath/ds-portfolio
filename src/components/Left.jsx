@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { SiGmail, SiLinkedin, SiGithub } from "react-icons/si";
+import { IoDocumentText } from "react-icons/io5";
 import "./Left.css";
 const LeftCard = () => {
   const imgSrc = `https://i.pinimg.com/564x/d4/50/dc/d450dc5b1dcd30086b0a4199195cdb89.jpg`;
@@ -36,7 +37,7 @@ const LeftCard = () => {
             rel={"noopener noreferrer"}
           >
             <SiGithub className="sIcon" size={30} />
-          </a>
+          </a>{" "}
         </div>
       </div>
     </div>
