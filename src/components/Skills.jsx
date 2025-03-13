@@ -56,10 +56,8 @@ function Skills() {
   return (
     <div className="section-container">
       <div className="section-header">
-        <h3 data-section="skills" className="section-heading-1 fw-bold mb-2">
-          SKILLS &
-        </h3>
-        <h3 className="section-heading-2 text-gray-600">TOOLS</h3>
+        <h3 className="section-heading-1">SKILLS &</h3>
+        <h3 className="section-heading-2">TOOLS</h3>
       </div>
 
       <div className="skill-cards">

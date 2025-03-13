@@ -166,17 +166,31 @@ body {
 
 .section-header {
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: left;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .section-header .section-heading-1,
 .section-header .section-heading-2 {
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   letter-spacing: 1px;
-  text-align: center;
-  line-height: 1.2;
+  line-height: 1.1;
   margin: 0;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.section-header .section-heading-1 {
+  color: white;
+}
+
+.section-header .section-heading-2 {
+  color: #353334;
 }
 
 /* Project Styles */
@@ -419,7 +433,7 @@ body {
 
   .section-header .section-heading-1,
   .section-header .section-heading-2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 1.1;
   }
 }
@@ -436,7 +450,7 @@ body {
 
   .section-header .section-heading-1,
   .section-header .section-heading-2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 1.1;
   }
 }
@@ -447,9 +461,15 @@ body {
     gap: 1.5rem;
   }
 
+  .section-header {
+    flex-direction: row; /* Keep headings side by side */
+    justify-content: center;
+    gap: 0.4rem; /* Slightly reduce gap on smaller screens */
+  }
+
   .section-header .section-heading-1,
   .section-header .section-heading-2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1.1;
   }
 
@@ -492,9 +512,15 @@ body {
     gap: 1.5rem;
   }
 
+  .section-header {
+    flex-direction: row; /* Keep headings side by side */
+    justify-content: center;
+    gap: 0.3rem; /* Further reduce gap on mobile */
+  }
+
   .section-header .section-heading-1,
   .section-header .section-heading-2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1.1;
   }
 

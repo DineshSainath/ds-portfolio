@@ -9,15 +9,15 @@ function Footer() {
         <h5>
           If you have a project that requires my expertise, let's get in touch!
         </h5>
-        <ul className="list-inline ">
+        <ul className="list-inline">
           <a
             className="cIcon"
             href="mailto:sainath.dinesh@gmail.com"
             target="_blank"
             rel={"noopener noreferrer"}
           >
-            <li className="list-inline-item mx-5 icon">
-              <SiGmail size={30} />
+            <li className="list-inline-item icon">
+              <SiGmail size={25} />
             </li>{" "}
           </a>
           <a
@@ -26,8 +26,8 @@ function Footer() {
             target="_blank"
             rel={"noopener noreferrer"}
           >
-            <li className="list-inline-item mx-5 icon">
-              <SiLinkedin size={30} />
+            <li className="list-inline-item icon">
+              <SiLinkedin size={25} />
             </li>
           </a>
           <a
@@ -36,8 +36,8 @@ function Footer() {
             target="_blank"
             rel={"noopener noreferrer"}
           >
-            <li className="list-inline-item mx-5 icon">
-              <SiGithub size={30} />
+            <li className="list-inline-item icon">
+              <SiGithub size={25} />
             </li>
           </a>
         </ul>

@@ -28,23 +28,25 @@ function Projects() {
       description:
         "A web application to track, visualize, and manage daily expenses with interactive charts and graphs.",
       link: "https://eloquent-hamster-56a9c5.netlify.app/",
-      github: "https://github.com/DineshSainath/Expense-Tracker",
+      github: "https://github.com/DineshSainath/expense-tracker",
       image: expenseTrackerImage,
     },
     {
       id: 3,
       name: "Keeper",
-      description: "A note-taking app inspired by Google Keep.",
-      link: "https://coruscating-crostata-d691f8.netlify.app/",
-      github: "https://github.com/dineshsainath/Keeper",
+      description:
+        "A note-taking application inspired by Google Keep, built with React.",
+      link: "https://keeper-app-dinesh.netlify.app/",
+      github: "https://github.com/DineshSainath/Keeper-App",
       image: keeperImage,
     },
     {
       id: 4,
       name: "Wedding Wise",
-      description: "A wedding planning application with vendor management.",
-      link: "https://weddingwise-ds.netlify.app/",
-      github: "https://github.com/dineshsainath/weddingwise",
+      description:
+        "A wedding planning application to help couples organize their big day.",
+      link: "https://wedding-wise.netlify.app/",
+      github: "https://github.com/DineshSainath/WeddingWise",
       image: weddingWiseImage,
     },
     {
@@ -60,8 +62,8 @@ function Projects() {
   return (
     <div data-section="projects" className="projects-container">
       <div className="section-header">
-        <h3 className="section-heading-1 fw-bold mb-2">RECENT</h3>
-        <h3 className="section-heading-2 text-gray-600">PROJECTS</h3>
+        <h3 className="section-heading-1">RECENT</h3>
+        <h3 className="section-heading-2">PROJECTS</h3>
       </div>
 
       <div className="projects-grid">

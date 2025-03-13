@@ -2,13 +2,8 @@ function Experience() {
   return (
     <div className="section-container">
       <div className="section-header">
-        <h3
-          data-section="experience"
-          className="section-heading-1 fw-bold mb-2"
-        >
-          WORK
-        </h3>
-        <h3 className="section-heading-2 text-gray-600">EXPERIENCE</h3>
+        <h3 className="section-heading-1">WORK</h3>
+        <h3 className="section-heading-2">EXPERIENCE</h3>
       </div>
 
       <div className="experience-container">

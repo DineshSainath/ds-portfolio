@@ -1,11 +1,11 @@
 /*Footer*/
 .Footer {
-  background-color: #151312;
+  background-color: #161616;
   margin: 0 auto;
   width: 100%;
   text-align: center;
   display: flex;
-  min-height: 15em;
+  min-height: 8em;
   max-width: 100vw;
   overflow-x: hidden;
 }
@@ -14,16 +14,17 @@
   align-content: center;
   margin: 0 auto;
   width: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: 0.75rem;
   max-width: 100vw;
   overflow-x: hidden;
 }
 
 .Footer h5 {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   text-align: center;
   color: #999992;
+  font-size: 1rem;
 }
 
 .Footer .icon:hover {
@@ -35,16 +36,42 @@
   color: #3d3d3a;
 }
 
+.Footer ul.list-inline {
+  margin-bottom: 0.75rem;
+}
+
+.Footer .list-inline-item {
+  margin: 0 1rem;
+}
+
 .trademark {
   margin-top: 0 auto;
   color: #707070;
-  background-color: #151312;
+  background-color: #161616;
   width: 100%;
+  padding: 0.4rem 0;
+  font-size: 0.8rem;
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
   .trademark {
     display: flex;
-    background-color: #151312;
+    background-color: #000000;
+  }
+}
+
+@media (max-width: 576px) {
+  .Footer {
+    min-height: 6em;
+  }
+
+  .Footer h5 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 0.9rem;
+  }
+
+  .Footer .list-inline-item {
+    margin: 0 0.5rem;
   }
 }
