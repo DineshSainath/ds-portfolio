@@ -9,7 +9,7 @@ import {
 } from "react-icons/di";
 import { FaFigma } from "react-icons/fa";
 
-function Experience() {
+function Skills() {
   const skills = [
     {
       icon: <FaFigma size={30} />,
@@ -46,7 +46,6 @@ function Experience() {
       name: "MySQL",
       description: "Relational Database",
     },
-
     {
       icon: <DiJava size={30} />,
       name: "Java",
@@ -55,32 +54,25 @@ function Experience() {
   ];
 
   return (
-    <>
-      <h3 data-section="skills" className="section-heading-1 fw-bold mb-2">
-        SKILLS &
-      </h3>
-      <h3 className="section-heading-2 text-gray-600 mb-4">TOOLS</h3>
+    <div className="section-container">
+      <div className="section-header">
+        <h3 data-section="skills" className="section-heading-1 fw-bold mb-2">
+          SKILLS &
+        </h3>
+        <h3 className="section-heading-2 text-gray-600">TOOLS</h3>
+      </div>
 
       <div className="skill-cards">
         {skills.map((skill, index) => (
-          <div
-            key={index}
-            className="skill bg-dark/20 rounded-3 p-4 mb-3 d-flex justify-content-between align-items-center"
-          >
-            <div className="skill-icon d-flex align-items-center">
-              {skill.icon}
-              <div className="ms-3">
-                <h4 className="skill-title fw-bold mb-1">{skill.name}</h4>
-                <p className="skill-description text-gray-500 mb-0">
-                  {skill.description}
-                </p>
-              </div>
-            </div>
+          <div key={index} className="skill-card">
+            <div className="skill-icon mb-3">{skill.icon}</div>
+            <h4 className="skill-title">{skill.name}</h4>
+            <p className="skill-description">{skill.description}</p>
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
-export default Experience;
+export default Skills;

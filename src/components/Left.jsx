@@ -24,26 +24,26 @@ const LeftCard = () => {
           <a
             href="mailto:sainath.dinesh@gmail.com"
             target="_blank"
-            rel={"noopener noreferrer"}
+            rel="noopener noreferrer"
           >
-            <SiGmail className="sIcon" size={30} />
+            <SiGmail className="sIcon" size={20} />
           </a>
           <a
             href="https://linkedin.com/in/dineshsainath/"
             target="_blank"
-            rel={"noopener noreferrer"}
+            rel="noopener noreferrer"
           >
-            <SiLinkedin className="sIcon" size={30} />
+            <SiLinkedin className="sIcon" size={20} />
           </a>
           <a
             href="https://github.com/dineshsainath/"
             target="_blank"
-            rel={"noopener noreferrer"}
+            rel="noopener noreferrer"
           >
-            <SiGithub className="sIcon" size={30} />
-          </a>{" "}
-          <a href={resumePdf} target="_blank" rel={"noopener noreferrer"}>
-            <IoDocumentText className="sIcon" size={30} />
+            <SiGithub className="sIcon" size={20} />
+          </a>
+          <a href={resumePdf} target="_blank" rel="noopener noreferrer">
+            <IoDocumentText className="sIcon" size={20} />
           </a>
         </div>
       </div>

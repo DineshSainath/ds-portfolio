@@ -1,12 +1,17 @@
 function Experience() {
   return (
-    <>
-      <h3 data-section="experience" className="section-heading-1 fw-bold mb-2">
-        WORK
-      </h3>
-      <h3 className="section-heading-2 text-gray-600 mb-4">EXPERIENCE</h3>
+    <div className="section-container">
+      <div className="section-header">
+        <h3
+          data-section="experience"
+          className="section-heading-1 fw-bold mb-2"
+        >
+          WORK
+        </h3>
+        <h3 className="section-heading-2 text-gray-600">EXPERIENCE</h3>
+      </div>
 
-      <div className="project-cards">
+      <div className="experience-container">
         {[
           {
             name: "Gravvity, Toronto",
@@ -29,21 +34,20 @@ function Experience() {
             description:
               "Led the design and optimization of user interfaces, conducted user research, and created wireframes and prototypes to enhance overall user experience for a student community platform.",
           },
-        ].map((project) => (
-          <div
-            key={project.name}
-            className="job bg-dark/20 rounded-3 p-4 mb-3 d-flex justify-content-between align-items-center"
-          >
-            <div>
-              <h4 className="job-title fw-bold mb-1">{project.name}</h4>
-              <p className="job-description text-gray-500 mb-0">
-                {project.description}
-              </p>
+        ].map((job) => (
+          <div key={job.name} className="job">
+            <div className="job-header">
+              <h4 className="job-title">{job.name}</h4>
+              <div className="job-meta">
+                <span className="job-position">{job.position}</span>
+                <span className="job-date">{job.date}</span>
+              </div>
             </div>
+            <p className="job-description">{job.description}</p>
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

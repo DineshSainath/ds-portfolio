@@ -1,90 +1,151 @@
 /* Left.css */
 .left-card {
   display: flex;
-  margin: 2rem;
+  margin: 1.5rem;
   animation: fadeIn 2s ease-out forwards;
   animation-delay: 0.4s;
 }
 
 .layer-1 {
-  background-color: white;
-  color: white;
-  padding: 1em;
-  border-radius: 1em;
-  margin: 1em;
+  background-color: #ffffff;
+  color: black;
+  padding: 1.8em 1.8em 2em 1.8em;
+  border-radius: 1.2em;
+  margin: 0.8em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 39rem;
+  max-height: none;
   max-width: 22rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: visible;
+}
+
+.layer-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.15),
+    transparent
+  );
 }
 
 .profile-img {
-  max-height: 20rem;
-  max-width: 15rem;
+  max-height: 17rem;
+  max-width: 13.5rem;
   border-radius: 1rem;
-  margin-top: 2rem;
+  margin-top: 0.6rem;
   filter: grayscale(80%);
-  transition: filter 0.3s ease !important;
+  transition: all 0.4s ease !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .profile-img:hover {
   filter: grayscale(0%);
+  transform: scale(1.02);
 }
 
 .profile-name {
   color: black;
   font-weight: bold;
-  font-size: 1.4rem;
-  margin: 1.2rem;
+  font-size: 1.5rem;
+  margin: 0.8rem 0 0.5rem 0;
 }
 
 .profile-text {
   color: #707072;
-  margin: 0rem 1rem 1.5rem 1rem;
+  margin: 0 1rem 1rem 1rem;
   font-weight: 400;
   text-align: center;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 .socials {
   display: flex;
-  gap: 2rem;
-  margin: 1rem;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0 0 0.2rem 0;
+  padding: 0.5rem 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.4rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.socials a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .sIcon {
   color: #707072;
   transition: all 0.3s ease;
+  font-size: 1rem;
+  display: inline-block;
+  width: 20px !important;
+  height: 20px !important;
 }
 
 .sIcon:hover {
   color: #151312;
+  transform: translateY(-2px);
 }
 
 /* Extra Small Devices (Portrait Phones) */
 @media (max-width: 576px) {
   .left-card {
-    margin: 1rem;
+    margin: 0.6rem;
   }
   .layer-1 {
-    padding: 1.5rem;
+    padding: 1.3rem 1.5rem 1.6rem 1.5rem;
+    background-color: #ffffff;
+    max-height: none;
+    margin-top: 1.5rem;
   }
   .socials {
-    padding: 0 0.5rem;
+    gap: 1.2rem;
+    padding: 0.5rem 0.8rem;
+  }
+  .sIcon {
+    width: 18px !important;
+    height: 18px !important;
   }
 }
 
 /* Small Devices (Landscape Phones) */
 @media (min-width: 577px) and (max-width: 768px) {
   .left-card {
-    margin: 1rem;
+    margin: 0.6rem;
   }
   .layer-1 {
-    padding: 1.5rem;
+    padding: 1.3rem 1.5rem 1.6rem 1.5rem;
+    background-color: #ffffff;
+    max-height: none;
+    margin-top: 1.5rem;
   }
   .socials {
-    padding: 0 1rem;
+    gap: 1.3rem;
+    padding: 0.5rem 0.8rem;
+  }
+  .sIcon {
+    width: 20px !important;
+    height: 20px !important;
   }
 }
 
@@ -95,47 +156,77 @@
   }
   .layer-1 {
     margin: 0 auto;
-    border-radius: 0em;
+    border-radius: 0.8em;
+    background-color: #ffffff;
+    padding: 1.6em 1.8em 1.8em 1.8em;
+    max-height: none;
+    margin-top: 2rem;
   }
   .profile-name {
     text-align: center;
     font-size: 1.8rem;
-    margin: 0.8rem;
-    margin-top: 1.5rem;
+    margin: 0.7rem 0;
+    margin-top: 1rem;
+    color: black;
+  }
+  .socials {
+    gap: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+  .sIcon {
+    width: 20px !important;
+    height: 20px !important;
   }
 }
 
 /* Large Devices (Laptops/Desktops) */
 @media (min-width: 1001px) and (max-width: 1300px) {
   .layer-1 {
-    max-height: 26rem;
+    max-height: none;
     max-width: 14rem;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
+    background-color: #ffffff;
+    padding: 1.3em 1.5em 1.6em 1.5em;
   }
 
   .profile-img {
-    max-height: 13rem;
-    max-width: 10rem;
-    margin-top: 1.5rem;
+    max-height: 11rem;
+    max-width: 8.5rem;
+    margin-top: 0.6rem;
   }
 
   .profile-name {
     text-align: center;
     font-size: 1.1rem;
-    margin: 0.8rem;
+    margin: 0.5rem 0;
+    color: black;
   }
 
   .profile-text {
-    margin: 0rem 0.5rem 0.2rem 0.5rem;
-    font-size: 0.7rem;
+    margin: 0 0.5rem 0.8rem 0.5rem;
+    font-size: 0.8rem;
+    color: #707072;
+    line-height: 1.5;
   }
+
+  .socials {
+    gap: 1.2rem;
+    padding: 0.5rem 0.8rem;
+  }
+
   .sIcon {
     color: #707072;
-    width: 20px;
-    height: 20px;
+    width: 18px !important;
+    height: 18px !important;
+    display: inline-block;
   }
 }
 
 /* Extra Large Devices (Large Screens) */
 @media (min-width: 1201px) {
+  .sIcon {
+    display: inline-block;
+    width: 20px !important;
+    height: 20px !important;
+  }
 }

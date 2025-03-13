@@ -1,6 +1,6 @@
 function Landing() {
   return (
-    <div>
+    <div className="landing-wrapper">
       <div data-section="landing" className="mb-5">
         <h1 className="heading-1">SOFTWARE</h1>
         <h1 className="heading-2">ENGINEER</h1>
@@ -10,7 +10,7 @@ function Landing() {
         </p>
       </div>
 
-      <div className="landing-brief row">
+      <div className="landing-brief row mx-0">
         <div className="col-md-4 text-center">
           <h3 className="display-6 fw-bold no">2+</h3>
           <p className="text-gray-600 text-uppercase landing-text">

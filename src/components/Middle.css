@@ -1,20 +1,33 @@
 /* Middle.css */
 .middle-content {
   display: flex;
-  max-width: 76em;
+  max-width: 100%;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.landing-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .middle-1 {
-  padding: 3rem;
+  padding: 2rem;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
-  margin-left: 3rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .heading-1,
 .heading-2 {
-  font-size: 7.5rem;
+  font-size: 6.5rem;
   font-weight: bold;
+  line-height: 1.1;
   /*Animation*/
 }
 
@@ -29,7 +42,7 @@
   }
 }
 .heading-1 {
-  padding-top: 3rem;
+  padding-top: 0.5rem;
   animation: fadeIn 2s ease-out forwards;
   animation-delay: 0.2s;
 }
@@ -41,24 +54,24 @@
 }
 
 .sub-heading {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   max-width: 50rem;
   color: #998f8f;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   /*Animation*/
   animation: fadeIn 5s ease-out forwards;
   animation-delay: 0.2s;
 }
 
 .landing-brief {
-  margin: 5rem 0 5rem 0 !important;
+  margin: 1.5rem 0 1.5rem 0 !important;
   animation: fadeIn 5s ease-out forwards;
   animation-delay: 0.2s;
 }
 
 /* RECENT PROJECTS */
 .section-heading-1 {
-  margin-top: 1.2rem;
+  margin-top: 0.5rem;
   font-size: 5.5rem;
   font-weight: bold;
   /*Animation*/
@@ -144,6 +157,7 @@
 @media (max-width: 576px) {
   .middle-1 {
     margin: 0 auto;
+    padding: 1rem;
   }
   .heading-1,
   .heading-2 {
@@ -153,11 +167,15 @@
   .sub-heading {
     font-size: 1.2rem;
     text-align: center;
+    margin-top: 1rem;
   }
   .section-heading-1,
   .section-heading-2 {
     text-align: center;
     font-size: 2.2em;
+  }
+  .landing-brief {
+    margin: 1rem 0 1rem 0 !important;
   }
 }
 
@@ -165,6 +183,7 @@
 @media (min-width: 577px) and (max-width: 768px) {
   .middle-1 {
     margin: 0 auto;
+    padding: 1.5rem;
   }
 
   .heading-1,
@@ -175,11 +194,15 @@
   .sub-heading {
     font-size: 1.2rem;
     text-align: center;
+    margin-top: 1rem;
   }
   .section-heading-1,
   .section-heading-2 {
     text-align: center;
     font-size: 3em;
+  }
+  .landing-brief {
+    margin: 1rem 0 1rem 0 !important;
   }
 }
 
@@ -187,42 +210,49 @@
 @media (min-width: 769px) and (max-width: 1000px) {
   .middle-1 {
     margin: 0 auto;
+    padding: 1.5rem;
   }
   .heading-1,
   .heading-2 {
     text-align: center;
+    font-size: 4.5rem;
   }
   .sub-heading {
     font-size: 1.2rem;
     text-align: center;
+    margin-top: 1rem;
   }
 
   .section-heading-1,
   .section-heading-2 {
     text-align: center;
   }
+  .landing-brief {
+    margin: 1rem 0 1rem 0 !important;
+  }
 }
 
 /* Large Devices (Laptops/Desktops) */
 @media (min-width: 1001px) and (max-width: 1300px) {
   .middle-1 {
-    padding-left: 0;
-    padding-top: 1rem;
+    padding: 1.5rem;
+    margin: 0 auto;
   }
 
   .heading-1,
   .heading-2 {
     font-size: 4.5rem;
+    line-height: 1.1;
   }
 
   .sub-heading {
     font-size: 1rem;
     max-width: 40rem;
+    margin-top: 1rem;
   }
 
   .landing-brief {
-    margin-bottom: 2rem;
-    padding-right: 7rem;
+    margin: 1rem 0 1rem 0 !important;
     /* max-width: 40rem; */
   }
   .section-heading-1,
@@ -241,4 +271,9 @@
 
 /* Extra Large Devices (Large Screens) */
 @media (min-width: 1201px) {
+  .middle-1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
 }

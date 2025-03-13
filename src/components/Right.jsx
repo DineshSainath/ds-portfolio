@@ -11,12 +11,12 @@ const Right = () => {
   ];
 
   return (
-    <div className="right-navbar">
+    <div className="top-navbar">
       <div className="nav-background">
         <nav>
-          <ul className="list-unstyled mb-0">
+          <ul className="nav-list">
             {navItems.map((item) => (
-              <li key={item.label} className="mb-3">
+              <li key={item.label} className="nav-item">
                 <button
                   onClick={() => {
                     const section = document.querySelector(
@@ -33,8 +33,10 @@ const Right = () => {
                     }
                   }}
                   className="navButton btn"
+                  title={item.label}
                 >
-                  <item.icon className="nav-icon" size={35} />
+                  <item.icon className="nav-icon" size={24} />
+                  <span className="nav-label">{item.label}</span>
                 </button>
               </li>
             ))}
